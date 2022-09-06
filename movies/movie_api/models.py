@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Rating(models.Model):
-    movie_name = models.ForeignKey()
     movie_rating = models.IntegerField()
     series_rating = models.IntegerField()
     best_scene = models.CharField(max_length=1000)
@@ -10,7 +9,7 @@ class Rating(models.Model):
     favourite_actor = models.CharField(max_length=200)
     review = models.CharField(max_length=1000)
    
-
+ 
 
     def __str__(self):
         return f"{self.review}"    
