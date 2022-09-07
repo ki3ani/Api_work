@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class MovieApiConfig(AppConfig):
+class LetsRateConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'movie_api'
+    name = 'lets_rate'
